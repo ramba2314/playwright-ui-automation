@@ -76,6 +76,6 @@ Install Dependencies
   ↓
 Run Playwright Tests
   ↓
-Generate Test Report
+Generate HTML Report
   ↓
 Pass / Fail Result
