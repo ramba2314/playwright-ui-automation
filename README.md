@@ -48,14 +48,34 @@ The test suite is configured to execute against :
 - Chromium
 - Firefox
 - WebKit 
-- Page Object Model (POM)
-- Reusable locators and methods
-- Test Data Management
-- Assertions
-- html test reporting
-- CI/CD integration
-## Future Enhancements 
-- API automation
-- Cross-browser execution
-- Parallel execution
-- GitHub Actions CI/CD pipeline
+### Latest Execution
+**6/6 tests passed**
+The positive and negative login scenarios were executed successfully across all three browsers.
+| Browser | Result |
+|---|---|
+| Chromium | ✅ Passed |
+| Firefox | ✅ Passed |
+| WebKit | ✅ Passed |
+## Test Reporting
+Playwright HTML reports are generated after test execution to help analyze:
+- Passed tests
+- Failed tests
+- Execution details
+- Test duration
+## CI/CD Integration
+GitHub Actions is configured to execute the Playwright test suite automatically.
+### CI/CD Flow
+```text
+Code Push
+  ↓
+GitHub Repository
+  ↓
+GitHub Actions
+  ↓
+Install Dependencies
+  ↓
+Run Playwright Tests
+  ↓
+Generate Test Report
+  ↓
+Pass / Fail Result
